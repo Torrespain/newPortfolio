@@ -11,6 +11,11 @@
 </head>
 <body>
     <header class="showcase">
+        <div class="smallContact">
+            <i onclick="window.open('https://github.com/Torrespain')" style="cursor:pointer;"class="fab fa-github"></i>
+            <i onclick="window.open('https://www.linkedin.com/in/javier-latorre-ibanez/')" style="cursor:pointer;" class="fab fa-linkedin-in"></i>
+            
+        </div>
         <div class="content">
             <img src="./assets/logo.jpg" class="logo" alt="Javier Latorre Ibanez">
             <div class="title">
@@ -25,24 +30,25 @@
     <!--Services-->
     <section class="services">
         <div class="container grid-3 center">
-            <div>
+            <div onclick="takeMeThere('.qualifications')">
                 <i class="fas fa-fingerprint fa-3x"></i>
-                <h3>Experience</h3>
+                <h3>Qualifications</h3>
                 <p>Check out my resume and experience as a Developer and Engineer</p>
             </div>
-            <div>
+            <div onclick="takeMeThere('.portfolio')"> 
                 <i class="fas fa-cubes fa-3x"></i>
                 <h3>Portfolio</h3>
                 <p>Take a look at some of my previous works</p>
             </div>
-            <div>
+            <div onclick="takeMeThere('.contact')">
                 <i class="far fa-envelope fa-3x"></i>
                 <h3>Contact</h3>
                 <p>Send me an E-mail or connect with me through LinkedIn, Slack or Stack Overflow</p>
             </div>
         </div>
     </section>
-        
+    
+    <!--About-->
     <section class="about bg-light">
         <div class="container">
             <div class="grid-2">
@@ -66,9 +72,97 @@
         </div>
     </section>
 
+    <!--Qualifications-->
+    <section class="qualifications">
+        <div class="container">
+            <h3><i class="fas fa-fingerprint fa-1x"></i> Qualifications <i class="fas fa-arrow-alt-circle-up" onclick="takeMeThere('.showcase')"></i></h3>
+            <div class="grid-qual">
+                <div>
+                    <h4>University of California Berkeley Extension (California)</h4>
+                    <ul>
+                        <li>Full Stack Web Development / Computer Software Engineering Program</li>
+                    </ul>
+                    <h4>University of La Rioja (La Rioja, Spain)</h4>
+                    <ul>
+                        <li>Masters in Industrial Engineering</li>
+                        <li>Awarded with an International Scholarship from CajaRioja UR to study at the University of Talca, Chile for one semester</li>
+                        <li>BSc in Electrical Engineering</li>
+                    </ul>
+                </div>
+                <div>
+                    <a href="https://zety.com/mycv/JavierLatorreIbanez" target="_blank"><img class="resumePic" src="assets/resume/resumePic.JPG" alt="resume" width="100%"></a>
+                </div>
+            </div> 
+        </div>
+    </section>
+
+    <!--Porfolio-->
+    <section class="portfolio bg-light">
+        <div class="container">
+            <h3><i class="fas fa-cubes  fa-1x"></i> Porfolio <i class="fas fa-arrow-alt-circle-up" onclick="takeMeThere('.showcase')"></i></h3>
+            <div class="grid-porfolio">
+                <div class="raw1">
+                    <a href="https://github.com/Torrespain/DnD-character-creator">
+                        <img class="pimages" src="assets/portfolioImages/dungeons-and-dragons.jpg">
+                            <div class="banner">
+                                <h4 class="bannerHeader">
+                                    Dungeons and Dragons
+                                </h4>
+                                <p class="bannerBody">
+                                    Full Stack MERN Application to fill a D&D character by using ReactJS and MongoDB and then print the data from the state on top of the official Character sheet
+                                </p>
+                            </div>
+                        </a>
+    
+                    <a href="https://murmuring-plains-45391.herokuapp.com/">
+                        <img class="pimages" src="assets/portfolioImages/connect-four.jpg" >
+                        <div class="banner">
+                            <h4 class="bannerHeader">
+                                Connect 4
+                            </h4>
+                            <p class="bannerBody">
+                                Self developed app of the classic Connect Four game using react ReactJS for two players!
+                            </p>
+                        </div>
+                    </a>
+                    
+                </div>
+                <div class="raw2">
+                    <a href="https://torrespain.github.io/project1-the-whole-thing/" target="_blank">
+                        <img class="pimages" src="assets/portfolioImages/project1.png" >
+                        <div class="banner">
+                            <h4 class="bannerHeader">
+                                The Whole Thing
+                            </h4>
+                            <p class="bannerBody">
+                               Application to generate recreational ideas to involving outdoor activity, brewery selection, and events. Use of Google Locations, Eventbrite and Foursquare APIs and Google Firebase as database
+                            </p>
+                        </div>
+                    </a>   
+                    <a href="https://github.com/Torrespain/bamazon" target="_blank">
+                    <img class="pimages" src="assets/portfolioImages/bamazon.jpg" >
+                        <div class="banner">
+                            <h4 class="bannerHeader">
+                                Bamazon
+                            </h4>
+                            <p class="bannerBody">
+                               Amazon-like storefront using MySQL and npm inquirer. The app will take in orders from customers and deplete stock from the store's inventory.In manager mode additional functionality has been added
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <footer class="center bg-dark">
         <p>Javier Latorre Ibanez &copy; 2018</p>
 
     </footer>
+
+    <script src="assets/javascript/javascript.js"></script>
 </body>
+
+
 </html>

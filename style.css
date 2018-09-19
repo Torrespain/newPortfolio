@@ -6,6 +6,28 @@ body {
     /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
 }
 
+a {
+    text-decoration: none;
+}
+
+.showcase .smallContact {
+   position: absolute;
+   top: 2%;
+   right: 3%;
+   opacity: 0.6;
+}
+
+.smallContact i {
+    margin-right: 5px;
+}
+
+.showcase:hover .smallContact {
+    transition: all 1s;
+    visibility: 1;
+    z-index: 1;
+    opacity: 1;
+}
+
 .showcase::after {
     content: '';
     height: 100vh;
@@ -85,15 +107,103 @@ body {
 }
 
 .bg-dark {
-    
     color: #f4f4f4;
 }
 
 .grid-2 {
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: repeat(2, 1fr); /*same as 33% 33% 33%*/
+    grid-template-columns: 40% 60%;
 }
+
+/*Qalifications*/
+
+.grid-qual {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 70% 30%;
+}
+
+.services .container div {
+    cursor: pointer;
+}
+
+.resumePic {
+    margin-top: 1.33em;
+}
+
+.qualifications .container .grid-qual div{
+    padding: 25px;
+}
+
+.fa-arrow-alt-circle-up {
+    float: right;
+}
+
+/*Portfolio*/
+
+.raw1,
+.raw2 {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.pimages {
+    width: 100%;
+}
+
+.banners {
+    width: 100%;
+	text-align: center;
+	background-color: #147c9e;
+	color: white;
+	position: relative;
+  	top: -80px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    overflow: auto;
+    transition: height 0.5s;
+    -webkit-transition: height 0.5s;
+}
+
+.banner {
+    width: 100%;
+	text-align: center;
+	background-color: #147c9e;
+	color: white;
+    height: 21.2px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: relative;
+    top: -80px;
+    transition: height 0.5s;
+    -webkit-transition: height 0.5s;
+    text-align: center;
+    overflow: hidden;
+}
+.banner h4 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.banner p {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 0.8em;
+}
+
+.banner:hover {
+    height: 100px;
+ }
+.banner p:hover {
+    font-size: 0.8em;
+}
+
+
+/*Footer*/
 
 footer {
   padding: 0.4rem;  
@@ -118,7 +228,8 @@ footer {
         display: none;
     }
     .grid-3,
-    .grid-2 {
+    .grid-2,
+    .grid-qual {
         grid-template-columns: 1fr;
     }
 
@@ -126,6 +237,17 @@ footer {
         border-bottom: #333 solid 1px;
         padding: 1.5rem 1rem;
     }
+
+    .resumePic {
+        margin-top: 0px;
+    }
+
+    .raw1,
+    .raw2 {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+}
 }
 
 /* Landscape */
