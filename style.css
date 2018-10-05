@@ -116,7 +116,13 @@ a {
     grid-template-columns: 40% 60%;
 }
 
-/*Qalifications*/
+/*About*/
+
+.aboutImage {
+    width: 90%;
+}
+
+/*Qualifications*/
 
 .grid-qual {
     display: grid;
@@ -186,7 +192,7 @@ a {
 }
 .banner h4 {
     margin-top: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 18px;
 }
 
 .banner p {
@@ -247,7 +253,7 @@ footer {
     display: grid;
     grid-gap: 20px;
     grid-template-columns: 1fr;
-}
+    }
 }
 
 /* Landscape */
