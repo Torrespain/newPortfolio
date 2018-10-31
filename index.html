@@ -104,21 +104,21 @@
                 <div class="raw1">
                     <a href="https://github.com/Torrespain/DnD-character-creator">
                         <img class="pimages" src="assets/portfolioImages/dungeons-and-dragons.jpg">
-                            <div class="banner">
-                                <h4 class="bannerHeader">
-                                    Dungeons and Dragons
-                                </h4>
-                                <p id="bannerBody">
-                                    Full Stack MERN Application to fill a D&D character by using ReactJS and MongoDB and then print the data from the state on top of the official Character sheet
-                                </p>
-                            </div>
-                        </a>
+                        <div class="banner">
+                            <h4 class="bannerHeader">
+                                Dungeons and Dragons
+                            </h4>
+                            <p id="bannerBody">
+                                Full Stack MERN Application to fill a D&D character by using ReactJS and MongoDB and then print the data from the state on top of the official Character sheet
+                            </p>
+                        </div>
+                    </a>
     
                     <a href="https://murmuring-plains-45391.herokuapp.com/">
                         <img class="pimages" src="assets/portfolioImages/connect-four.jpg" >
                         <div class="banner">
                             <h4 class="bannerHeader">
-                                Connect 4
+                                Connect Four
                             </h4>
                             <p class="bannerBody">
                                 Self developed app of the classic Connect Four game using react ReactJS for two players!
@@ -138,7 +138,19 @@
                                 Data representation application using React.js as a framework and Charts.js to represent data from a JSON file
                             </p>
                         </div>
-                    </a>   
+                    </a>
+
+                    <a href="https://github.com/Torrespain/intermediateAlgorithms" target="_blank">
+                        <img class="pimages" src="assets/portfolioImages/algorithms.jpg" >
+                        <div class="banner">
+                            <h4 class="bannerHeader">
+                                Algorithms
+                            </h4>
+                            <p class="bannerBody">
+                                Self developed Algorithms
+                            </p>
+                        </div>
+                    </a>     
                     
                 </div>
                 <div class="raw2">
@@ -169,10 +181,37 @@
         </div>
     </section>
 
+<!--Contact form-->
+<div class="container">
+    <h3><i class="far fa-envelope fa-1x"></i> Contact Form <i class="fas fa-arrow-alt-circle-up" onclick="takeMeThere('.showcase')"></i></h3>
+    <section class="contact">            
+        <form id="contact" action="emailHandler.php" method="post" >
+          <h3>Send me an E-mail!</h3>
+          <h4>Contact me for further information</h4>
+          <fieldset>
+            <input placeholder="Your Name" type="text" name="name" required>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Your Email Address" type="email" name="mail" required>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Your Phone Number (optional)" type="tel" name="phone">
+          </fieldset>
+          <fieldset>
+            <input placeholder="Your Location (optional)" type="loc" name="location">
+          </fieldset>
+          <fieldset>
+            <textarea placeholder="Type your message here...." name="message" required></textarea>
+          </fieldset>
+          <fieldset>
+            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+          </fieldset>
+        </form>
+    </section>
+</div>
 
-    <footer class="center bg-dark">
+    <footer class="center bg-light">
         <p>Javier Latorre Ibanez &copy; 2018</p>
-
     </footer>
 
     <script src="assets/javascript/javascript.js"></script>
